@@ -13,8 +13,12 @@ const Coins = () => {
         var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
         return res;
         }
+    let count=0
+
     const {data,pending,err}=useFetch("https://api.coingecko.com/api/v3/search/trending");
     const {data:mcoins,pending:mpending,err:merr}=useFetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en");
+   
+    
     return ( <>
     <div className="flex flex-col gap-1 max-w-6xl mx-auto p-2 w-full">
         <div>  
