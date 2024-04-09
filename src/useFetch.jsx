@@ -25,7 +25,7 @@ const useFetch = (url) => {
         setTimeout(()=>{
 
             fetchData();
-        },10000)
+        },3000)
         },[])
     
     
