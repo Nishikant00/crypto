@@ -53,7 +53,7 @@ const CoinDetails = () => {
     }
     return ( <>
     <div className="my-6">
-        <div className="flex flex-col gap-2 mx-auto max-w-6xl w-full items-center p-4">
+        <div className="flex flex-col gap-2 mx-auto max-w-6xl w-full items-center p-3">
         
         <Line options={options} data={datas} ></Line>
         
